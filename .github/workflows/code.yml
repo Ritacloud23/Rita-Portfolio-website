@@ -1,6 +1,6 @@
 name: deploy my static website
 
-run: 
+on: 
   push:
     branches:
     - main
