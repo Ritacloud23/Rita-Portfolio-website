@@ -3,7 +3,7 @@ name: deploy my static website
 run: 
   push:
     branches:
-    - master
+    - main
 
     jobs: 
   builds:
