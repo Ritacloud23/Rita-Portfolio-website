@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Folio Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Medplus DevOps Deployment - Ritacloud23</title>
+  <meta name="description" content="End-to-end Medplus web app deployment using AWS EC2, Docker, ECR, Portainer, and CI/CD automation.">
+  <meta name="keywords" content="AWS, Docker, GitHub Actions, ECR, EC2, Portainer, DevOps, Cloud Engineer, Ritacloud23">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/FAV-Png.jpg" rel="icon">
+  <link href="assets/img/Cloud-ico.jpg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,69 +26,40 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Folio
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  * Updated: Aug 08 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
 
+  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Folio</h1>
+        <h1 class="sitename">RITA</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
-  </header>
+  </header><!-- End Header -->
 
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background">
-      <div class="container position-relative">
-        <h1>Portfolio Details</h1>
-        <p>A well-structured AWS VPC architecture built to ensure network isolation, traffic flow, and optimized scalability for cloud-based application</p>
+      <div class="container position-relative" data-aos="fade-up">
+        <h1>Medplus DevOps Deployment</h1>
+        <p>End-to-end automation of the Medplus web application — containerized, pushed to ECR, and deployed to AWS EC2 with CI/CD and Portainer.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">Medplus Project</li>
           </ol>
         </nav>
       </div>
@@ -98,9 +69,9 @@
     <section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
+          <!-- Project Images / Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
@@ -108,105 +79,112 @@
                 {
                   "loop": true,
                   "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
+                  "autoplay": { "delay": 4000 },
                   "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
+                  "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
                 }
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arch-04.jpg" alt="">
+                  <img src="assets/img/projects/medplus-arch.jpg" alt="AWS Architecture for Medplus">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Vp-02jpg" alt="">
+                  <img src="assets/img/projects/medplus-docker.jpg" alt="Docker Image Build and Push">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/IAM-03.jpg" alt="">
+                  <img src="assets/img/projects/medplus-portainer.jpg" alt="Medplus Deployment via Portainer">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/cloud.jpg" alt="">
+                  <img src="assets/img/projects/medplus-pipeline.jpg" alt="GitHub Actions CI/CD Pipeline">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
+
             </div>
           </div>
 
+          <!-- Project Info + Description -->
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: AWS VPC architecture</li>
-                <li><strong>Client</strong>: Project</li>
-                <li><strong>Project date</strong>: 27 june, 2025</li>
-                <li><strong></strong>: <a href="#"></a></li>
+                <li><strong>Category</strong>: Cloud & DevOps Automation</li>
+                <li><strong>Project Date</strong>: October 2025</li>
+                <li><strong>Stack</strong>: AWS, Docker, GitHub Actions, ECR, EC2, Portainer</li>
+                <li><strong>GitHub Repo</strong>: 
+                  <a href="https://github.com/Ritacloud23/medplus" target="_blank">
+                    github.com/Ritacloud23/medplus
+                  </a>
+                </li>
               </ul>
             </div>
+
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>VPC-Based cloud Infrastructure Deployment</h2>
+              <h2>Project Overview</h2>
               <p>
-                Designed and deployed a secure and highly available AWS Virtual Private Cloud (VPC) architecture featuring public and private subnets, custom route tables, a NAT Gateway, and security groups. Configured EC2 instances for hosting, implemented IAM roles for controlled access, and integrated CloudWatch for real-time monitoring and performance optimization. This setup ensures network isolation, scalability, and robust security for cloud-based applications.
-  </p>
+                The <strong>Medplus DevOps Deployment</strong> demonstrates a full CI/CD pipeline where the application is 
+                containerized, tested, and deployed automatically to AWS. The project integrates multiple AWS services 
+                with Docker, GitHub Actions, and Portainer for end-to-end automation.
               </p>
+
+              <h3>Deployment Steps</h3>
+              <ol>
+                <li><strong>Containerization:</strong> Built a lightweight Docker image using a <code>python:3.11-slim</code> base, optimized with multi-stage builds.</li>
+                <li><strong>ECR Integration:</strong> Created a private AWS ECR repository and used <code>aws ecr get-login-password</code> for authentication.</li>
+                <li><strong>CI/CD Pipeline:</strong> Automated build, tag, and push workflows using <strong>GitHub Actions</strong>.</li>
+                <li><strong>EC2 Deployment:</strong> Pulled and deployed the ECR image to an EC2 instance via <strong>Portainer</strong> for visual container management.</li>
+                <li><strong>Reverse Proxy Setup:</strong> Configured <strong>NGINX</strong> as a reverse proxy and applied SSL using <strong>Certbot</strong>.</li>
+              </ol>
+
+              <h3>Outcome</h3>
+              <p>
+                The project achieved <strong>zero-downtime deployment</strong> with secure, automated workflows from code commit to production deployment. 
+                It highlights key DevOps principles of automation, scalability, and monitoring in real-world AWS environments.
+              </p>
+
+              <div class="mt-3">
+                <a href="https://ritacloudsolutuin.online" target="_blank" class="btn btn-primary me-2">
+                  Live Demo
+                </a>
+                <a href="https://github.com/Ritacloud23/medplus" target="_blank" class="btn btn-outline-primary">
+                  View on GitHub
+                </a>
+              </div>
             </div>
           </div>
-
         </div>
 
       </div>
-
     </section><!-- /Portfolio Details Section -->
 
   </main>
 
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Rita</h3>
-      <p>Cloud architecture and Deployment</p>
+    <div class="container text-center">
+      <h3 class="sitename">RITA</h3>
+      <p>Thanks for visiting my portfolio — see you in the cloud ☁️</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/RitaNnenna5"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/171S5m71Wk/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/rita.nnenna.92"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rita-nnenna"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Rita</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Distributed by <a href="https://Ugwuanyi Rita N" target="_blank">ThemeWagon</a>
-        </div>
+      <div class="copyright mt-3">
+        <span>© 2025 <strong class="sitename">Ritacloud23</strong> — All Rights Reserved.</span>
       </div>
     </div>
-  </footer>
+  </footer><!-- End Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
@@ -216,5 +194,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
