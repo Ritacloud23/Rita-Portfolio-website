@@ -1493,7 +1493,7 @@ section p {
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Ritacloud23 Custom Styling for Project Details --- */
+
 .portfolio-details {
   background: #f9f9f9;
   padding: 80px 0;
@@ -1522,16 +1522,55 @@ section p {
   margin-top: 30px;
 }
 
-/* --- Ritacloud23 Custom Image Slider Styling --- */
+
 .portfolio-details .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
+.portfolio-details .portfolio-details-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.portfolio-details .swiper-slide {
+  text-align: center;
+  background: #fff;
+}
+
 .portfolio-details .swiper-slide img {
   width: 100%;
-  max-width: 850px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0,)
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-details .swiper-slide img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-details .swiper-pagination {
+  bottom: 10px !important;
+}
+
+.portfolio-details .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #0078ff;
+  opacity: 0.4;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-details .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
