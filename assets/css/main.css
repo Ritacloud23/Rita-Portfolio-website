@@ -1604,3 +1604,10 @@ section p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: block;
 }
+
+.col-lg-8 img {
+  max-height: 480px;
+}
+.col-lg-8 img {
+  max-height: 480px;
+}
