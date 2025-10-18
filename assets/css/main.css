@@ -1586,3 +1586,12 @@ section p {
   color: #fff;
   text-decoration: none;
 }
+
+.services-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
