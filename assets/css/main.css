@@ -1595,3 +1595,12 @@ section p {
   display: block;
   object-fit: cover;
 }
+
+.services-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+}
