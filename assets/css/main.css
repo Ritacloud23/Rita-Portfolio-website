@@ -1521,3 +1521,17 @@ section p {
 .portfolio-description {
   margin-top: 30px;
 }
+
+/* --- Ritacloud23 Custom Image Slider Styling --- */
+.portfolio-details .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-details .swiper-slide img {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0,)
