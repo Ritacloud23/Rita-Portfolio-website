@@ -1492,3 +1492,32 @@ section p {
   transform: translateY(-5px);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
+
+/* --- Ritacloud23 Custom Styling for Project Details --- */
+.portfolio-details {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.portfolio-details h2 {
+  color: #1a1a1a;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.portfolio-details p {
+  color: #444;
+  line-height: 1.8;
+}
+
+.portfolio-info {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.portfolio-description {
+  margin-top: 30px;
+}
