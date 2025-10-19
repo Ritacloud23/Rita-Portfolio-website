@@ -285,179 +285,110 @@
 
 
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg py-5">
+  <div class="container" data-aos="fade-up">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>I design, deploy, and optimize cloud infrastructures that are reliable, secure, and built for growth.</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="section-title text-center mb-5">
+      <h2>My DevOps Projects</h2>
+      <p>I build and automate cloud infrastructures using AWS, Docker, and CI/CD pipelines — ensuring every deployment is secure, scalable, and cost-efficient.</p>
+    </div>
 
-      <div class="container">
+    <!-- Portfolio Filters -->
+    <ul class="portfolio-filters isotope-filters text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-aws">AWS</li>
+      <li data-filter=".filter-docker">Docker</li>
+      <li data-filter=".filter-cicd">CI/CD</li>
+      <li data-filter=".filter-iac">IaC</li>
+    </ul>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <!-- Portfolio Items -->
+    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">VPC</li>
-            <li data-filter=".filter-product">EC2</li>
-            <li data-filter=".filter-branding">IAM</li>
-            <li data-filter=".filter-books">S3</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Arch-04.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Arch-04</h4>
-                  <p>AWS architecture diagram</p>
-                  <a href="assets/img/portfolio/Arch-04.jpg" title="Arch-04" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/medicare-website.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>medicare-website</h4>
-                  <p>MediCare Website Deployment on AWS</p>
-                  <a href="assets/img/portfolio/medicare-website.jpg" title="medicare-website" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Net-AL.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Net-AL</h4>
-                  <p>Network ACL Configuration for Secure VPC Traffic Control</p>
-                  <a href="assets/img/portfolio/Net-AL.jpg" title="Net-AL" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/SEC-00.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><SEC-00></SEC-00></h4>
-                  <p>AWS Security Group Configuration</p>
-                  <a href="assets/img/portfolio/SEC-00.jpg" title="SEC-00" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/code-05.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><code-05></code-05></h4>
-                  <p>EC2 Deployment Process for Medicare Project</p>
-                  <a href="assets/img/portfolio/code-05.jpg" title="code-05" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Terraform-code.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Terraform-code</h4>
-                  <p>Infrastructure as code (IaC) with Terraform</p>
-                  <a href="assets/img/portfolio/Terraform-code.jpg" title="Terraform-code" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/route-5.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>route-5</h4>
-                  <p>AWS Route Table Configuration</p>
-                  <a href="assets/img/portfolio/route-5.jpg" title="route-5" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/S3-bucket.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><s3-bucket></s3-bucket></h4>
-                  <p>Amazon S3 Bucket Configuration</p>
-                  <a href="assets/img/portfolio/S3-bucket.jpg" title="s3-bucket" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/web-server.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>web-server</h4>
-                  <p>Build a Secure Web Server on AWS</p>
-                  <a href="assets/img/portfolio/web-server.jpg" title="web-server" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Rule-img.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Rule-img</h4>
-                  <p>AWS Config Rule Setup Implemented AWS Config to continuously monitor and evaluate AWS resource configurations</p>
-                  <a href="assets/img/portfolio/Rule-img.png" title="Rule-img" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/ALU-9 (1).jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>ALU-9</h4>
-                  <p>Linux Environment on AWS</p>
-                  <a href="assets/img/portfolio/ALU-9 (1).jpg" title="ALU-9" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Subent-8.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Subent-8</h4>
-                  <p>AWS Subnet Configuration</p>
-                  <a href="assets/img/portfolio/Subent-8.jpg" title="Subent-8" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+      <!-- Mediplus Project -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-aws">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/Arch-04.jpg" class="img-fluid" alt="AWS Architecture for Mediplus">
+          <div class="portfolio-info">
+            <h4>Mediplus 3-Tier Cloud Deployment</h4>
+            <p>Deployed on AWS EC2, ECR, and Route 53 with SSL, CI/CD, and automated scaling.</p>
+            <a href="assets/img/portfolio/Arch-04.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="AWS Architecture for Mediplus"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <!-- Docker Project -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-docker">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/ECR Repository for mediplus.jpg" class="img-fluid" alt="Docker Build & Push to ECR">
+          <div class="portfolio-info">
+            <h4>Docker Image Build + ECR Push</h4>
+            <p>Containerized the Mediplus application and automated ECR uploads via GitHub Actions.</p>
+            <a href="assets/img/portfolio/ECR Repository for mediplus.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="Docker & ECR Push"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CI/CD Project -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cicd">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/github action cicd.jpg" class="img-fluid" alt="CI/CD Pipeline Automation">
+          <div class="portfolio-info">
+            <h4>GitHub Actions CI/CD Pipeline</h4>
+            <p>Automated the build, test, and deployment pipeline for Mediplus using GitHub Actions.</p>
+            <a href="assets/img/portfolio/github action cicd.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="CI/CD Workflow"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portainer Management -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-docker">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/medplus-portainer.jpg" class="img-fluid" alt="Portainer Management">
+          <div class="portfolio-info">
+            <h4>Container Management with Portainer</h4>
+            <p>Used Portainer to manage Docker containers and visualize deployments on AWS EC2.</p>
+            <a href="assets/img/portfolio/medplus-portainer.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="Portainer Dashboard"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- IaC Project -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-iac">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/Terraform-code.jpg" class="img-fluid" alt="Infrastructure as Code">
+          <div class="portfolio-info">
+            <h4>Infrastructure as Code (Terraform)</h4>
+            <p>Provisioned AWS resources using Terraform for consistent and repeatable deployments.</p>
+            <a href="assets/img/portfolio/Terraform-code.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="Terraform IaC"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reverse Proxy & SSL -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-aws">
+        <div class="portfolio-content h-100">
+          <img src="assets/img/portfolio/haproxy-ssl.jpg" class="img-fluid" alt="HAProxy SSL Configuration">
+          <div class="portfolio-info">
+            <h4>Reverse Proxy & SSL Integration</h4>
+            <p>Configured HAProxy reverse proxy with SSL for secure access to Mediplus web services.</p>
+            <a href="assets/img/portfolio/haproxy-ssl.jpg" data-gallery="portfolioGallery" class="glightbox preview-link" title="HAProxy SSL Setup"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="View Project Details"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Portfolio Container -->
+  </div>
+</section>
+<!-- ======= End Portfolio Section ======= -->
 
     
     

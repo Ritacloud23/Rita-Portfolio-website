@@ -47,7 +47,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main class="main">
 
@@ -55,7 +56,7 @@
     <div class="page-title dark-background">
       <div class="container position-relative" data-aos="fade-up">
         <h1>Medplus DevOps Deployment</h1>
-        <p>End-to-end automation of the Medplus web application — containerized, pushed to ECR, and deployed to AWS EC2 with CI/CD and Portainer.</p>
+        <p>A real-world DevOps project automating the Medplus web app using AWS, Docker, GitHub Actions, and Portainer — fully integrated with SSL and CI/CD.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -63,15 +64,16 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
+    <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <!-- Project Images / Slider -->
+          <!-- Project Image Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
@@ -87,16 +89,19 @@
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ECR Repository for medplus.jpg" alt="AWS Architecture for Medplus">
+                  <img src="assets/img/portfolio/ECR Repository for medplus.jpg" alt="AWS ECR Repository for Medplus">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Docker Build for medplus.jpg" alt="Docker Image Build and Push">
+                  <img src="assets/img/portfolio/Docker Build for medplus.jpg" alt="Docker Build and Push">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Medplus Deployment via Portainer.jpg" alt="Medplus Deployment via Portainer">
+                  <img src="assets/img/portfolio/Medplus Deployment via Portainer.jpg" alt="Portainer Deployment Management">
                 </div>
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/github action cicd.jpg" alt="GitHub Actions CI/CD Pipeline">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/haproxy-ssl.jpg" alt="HAProxy SSL Setup">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -104,51 +109,49 @@
             </div>
           </div>
 
-          <!-- Project Info + Description -->
+          <!-- Project Information -->
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-  <h3>Project Information</h3>
-  <ul>
-    <li><strong>Category:</strong> AWS Cloud & DevOps Deployment</li>
-    <li><strong>Client:</strong> Medplus Web Application</li>
-    <li><strong>Project Date:</strong> October 2025</li>
-    <li><strong>Tools Used:</strong> Docker, AWS EC2, ECR, Portainer, GitHub Actions, Nginx</li>
-    <li><strong>Live Link:</strong> <a href="https://ritacloudsolutuin.online" target="_blank">View Deployed App</a></li>
-  </ul>
-</div>
-
+              <h3>Project Overview</h3>
+              <ul>
+                <li><strong>Category:</strong> AWS Cloud & DevOps</li>
+                <li><strong>Project:</strong> Medplus Web Application</li>
+                <li><strong>Date:</strong> October 2025</li>
+                <li><strong>Tools:</strong> Docker · AWS EC2 · ECR · Route 53 · GitHub Actions · Portainer · HAProxy</li>
+                <li><strong>Live App:</strong> <a href="https://ritacloudsolutuin.online" target="_blank">ritacloudsolutuin.online</a></li>
+              </ul>
+            </div>
 
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-  <h2>Medplus 3-Tier Cloud Deployment Project</h2>
-  <p>
-    Deployed a 3-tier Medplus web application on AWS using Docker and GitHub Actions.  
-    The pipeline automatically builds and pushes Docker images to Amazon ECR, then deploys containers on EC2 via Portainer.  
-    Nginx serves as the reverse proxy with SSL integration for secure public access.  
-    This setup ensures automation, scalability, and high availability of the application.
-  </p>
-</div>
+              <h2>Medplus 3-Tier Cloud Deployment</h2>
+              <p>
+                This project demonstrates a complete cloud-native DevOps workflow: from containerization to automated CI/CD deployment.
+                The <strong>Medplus web app</strong> is hosted on AWS EC2, with images built and stored on ECR and managed visually through Portainer.
+              </p>
+              <p>
+                <strong>HAProxy</strong> serves as the reverse proxy with <strong>SSL configuration</strong> for secure HTTPS connections and domain routing via Route 53.
+              </p>
 
               <h3>Deployment Steps</h3>
               <ol>
-                <li><strong>Containerization:</strong> Built a lightweight Docker image using a <code>python:3.11-slim</code> base, optimized with multi-stage builds.</li>
-                <li><strong>ECR Integration:</strong> Created a private AWS ECR repository and used <code>aws ecr get-login-password</code> for authentication.</li>
-                <li><strong>CI/CD Pipeline:</strong> Automated build, tag, and push workflows using <strong>GitHub Actions</strong>.</li>
-                <li><strong>EC2 Deployment:</strong> Pulled and deployed the ECR image to an EC2 instance via <strong>Portainer</strong> for visual container management.</li>
-                <li><strong>Reverse Proxy Setup:</strong> Configured <strong>NGINX</strong> as a reverse proxy and applied SSL using <strong>Certbot</strong>.</li>
+                <li><strong>Containerization:</strong> Created a production-ready Docker image using <code>python:3.11-slim</code> base.</li>
+                <li><strong>Authentication:</strong> Logged Docker CLI into ECR using AWS credentials and token.</li>
+                <li><strong>CI/CD Automation:</strong> Implemented GitHub Actions pipeline for image build, tag, and push to ECR.</li>
+                <li><strong>Deployment:</strong> Pulled the latest image into EC2 and deployed via <strong>Portainer</strong>.</li>
+                <li><strong>Security:</strong> Configured <strong>HAProxy + SSL</strong> with Let’s Encrypt and custom domain from Namecheap.</li>
               </ol>
 
               <h3>Outcome</h3>
               <p>
-                The project achieved <strong>zero-downtime deployment</strong> with secure, automated workflows from code commit to production deployment. 
-                It highlights key DevOps principles of automation, scalability, and monitoring in real-world AWS environments.
+                The result is a fully automated, secure, and scalable deployment pipeline achieving <strong>zero downtime</strong> and efficient cloud resource utilization.
               </p>
 
               <div class="mt-3">
                 <a href="https://ritacloudsolutuin.online" target="_blank" class="btn btn-primary me-2">
-                  Live Demo
+                  <i class="bi bi-globe"></i> Live Demo
                 </a>
                 <a href="https://github.com/Ritacloud23/medplus" target="_blank" class="btn btn-outline-primary">
-                  View on GitHub
+                  <i class="bi bi-github"></i> View on GitHub
                 </a>
               </div>
             </div>
@@ -156,7 +159,8 @@
         </div>
 
       </div>
-    </section><!-- /Portfolio Details Section -->
+    </section>
+    <!-- End Portfolio Details Section -->
 
   </main>
 
@@ -170,12 +174,13 @@
         <a href="https://www.facebook.com/share/171S5m71Wk/"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/rita.nnenna.92"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/rita-nnenna"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Ritacloud23"><i class="bi bi-github"></i></a>
       </div>
       <div class="copyright mt-3">
         <span>© 2025 <strong class="sitename">Ritacloud23</strong> — All Rights Reserved.</span>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
