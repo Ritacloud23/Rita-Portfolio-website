@@ -1611,3 +1611,29 @@ section p {
 .col-lg-8 img {
   max-height: 480px;
 }
+
+/* 🌟 About Section Styling */
+.about {
+  background-color: #f9f9fb;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.about p {
+  font-size: 1.05rem;
+}
+
+.about ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.about img {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
