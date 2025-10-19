@@ -647,35 +647,52 @@
           </div>
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
+        <form action="https://formspree.io/f/xgvnqlnr" method="POST" class="php-email-form">
+  <div class="row gy-3">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
 
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
+    <div class="col-md-12">
+      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    </div>
 
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
+    <div class="col-md-12">
+      <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+    </div>
 
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Send Message</button>
+      <p class="mt-3 text-success" id="form-success" style="display:none;">
+        ✅ Thank you for reaching out! Your message has been successfully sent.
+      </p>
+    </div>
+  </div>
+</form>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+<script>
+  const form = document.querySelector(".php-email-form");
+  const successMsg = document.getElementById("form-success");
+  
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.reset();
+      successMsg.style.display = "block";
+    }
+  });
+</script>
 
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
 
       </div>
 
@@ -686,7 +703,7 @@
   <footer id="footer" class="footer light-background">
     <div class="container">
       <h3 class="sitename">Rita</h3>
-      <p>Thanks for visiting my portfolio, see you in the cloud!.</p>
+      <p>feel free to reach out for more opportunities and collaborations!</p>
       <div class="social-links d-flex justify-content-center">
         <a href="https://x.com/RitaNnenna5?t=XMuPkcs_MGxPoUIAJo6TMA&s=09"><i class="bi bi-twitter-x"></i></a>
         <a href="https://www.facebook.com/share/171S5m71Wk/"><i class="bi bi-facebook"></i></a>
